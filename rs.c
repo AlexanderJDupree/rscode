@@ -29,6 +29,12 @@
 #include <ctype.h>
 #include "ecc.h"
 
+#define TRUE 1
+#define FALSE 0
+
+#define NPAR RSCODE_NPAR
+#define MAXDEG RSCODE_MAXDEG
+
 /* Encoder parity bytes */
 int pBytes[MAXDEG];
 

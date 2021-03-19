@@ -91,7 +91,7 @@ main (int argc, char *argv[])
  
   printf("Encoded data is: \"%s\"\n", codeword);
  
-#define ML (sizeof (msg) + NPAR)
+#define ML (sizeof (msg) + RSCODE_NPAR) // I believe ML is Message Length?
 
 
   /* Add one error and two erasures */

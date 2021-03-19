@@ -24,6 +24,9 @@
  *
  */
 
+#ifndef RSCODE_ECC_H
+#define RSCODE_ECC_H
+
 /****************************************************************
   
   Below is NPAR, the only compile-time parameter you should have to
@@ -42,15 +45,9 @@
 
   ****************************************************************/
 
-#define NPAR 4
+#define RSCODE_NPAR 4
 
 /****************************************************************/
-
-
-
-
-#define TRUE 1
-#define FALSE 0
 
 typedef unsigned long BIT32;
 typedef unsigned short BIT16;
@@ -58,14 +55,14 @@ typedef unsigned short BIT16;
 /* **************************************************************** */
 
 /* Maximum degree of various polynomials. */
-#define MAXDEG (NPAR*2)
+#define RSCODE_MAXDEG (RSCODE_NPAR*2)
 
 /*************************************/
 /* Encoder parity bytes */
-extern int pBytes[MAXDEG];
+extern int pBytes[RSCODE_MAXDEG];
 
 /* Decoder syndrome bytes */
-extern int synBytes[MAXDEG];
+extern int synBytes[RSCODE_MAXDEG];
 
 /* print debugging info */
 extern int DEBUG;
@@ -98,3 +95,5 @@ void mult_polys(int dst[], int p1[], int p2[]);
 
 void copy_poly(int dst[], int src[]);
 void zero_poly(int poly[]);
+
+#endif // RSCODE_ECC_H

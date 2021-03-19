@@ -38,6 +38,9 @@
 #include <stdio.h>
 #include "ecc.h"
 
+#define NPAR RSCODE_NPAR
+#define MAXDEG RSCODE_MAXDEG
+
 /* The Error Locator Polynomial, also known as Lambda or Sigma. Lambda[0] == 1 */
 static int Lambda[MAXDEG];
 
