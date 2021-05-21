@@ -46,7 +46,7 @@
   ****************************************************************/
 
 #ifndef RSCODE_NPAR
-#define RSCODE_NPAR 7
+#define RSCODE_NPAR 32
 #endif //RSCODE_NPAR
 
 #define RSCODE_MAX_LEN 255
